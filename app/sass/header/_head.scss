@@ -1,0 +1,40 @@
+.header{
+  background-color: #5e4238;
+  &__logo{
+    display: block;
+    position: relative;
+    float: left;
+    width: 193px;
+    margin-top: 27px;
+    margin-bottom: 23px;
+    font-family: $Boomboom;
+    > p:first-of-type{
+       display: block;
+       position: relative;
+       float: left;
+       width: 100%;
+       font-size: 55px;
+       color: #f2f2f2;
+      margin: 0;
+      span{
+        color: #42bf6e;
+      }
+     }
+    > p:last-of-type{
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+      font-size: 30px;
+      color: #f2f2f2;
+      text-align: center;
+      margin-top: -21px;
+      margin-bottom: 0;
+      padding-left: 13px;
+      @include box-sizing(border-box);
+      span{
+        color: #42bf6e;
+      }
+    }
+  }
+}
