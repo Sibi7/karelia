@@ -4,10 +4,15 @@
     display: block;
     position: relative;
     float: left;
-    width: 193px;
+    width: 192px;
     margin-top: 27px;
     margin-bottom: 23px;
     font-family: $Boomboom;
+    @include breakpoint(max-width 600px){
+      margin-left: calc(50% - (192px/2));
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
     > p:first-of-type{
        display: block;
        position: relative;

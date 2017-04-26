@@ -3,13 +3,18 @@
   position: relative;
   float: right;
   width: 740px;
+  @include breakpoint(max-width 600px){
+    width: 100%;
+  }
 }
 .header__trigger{
   display: none;
   position: relative;
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 37px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   > span{
     display: block;
     position: relative;
@@ -34,10 +39,19 @@
   margin-top: 35px;
   margin-bottom: 0;
   list-style: none;
+  @include breakpoint(max-width 600px){
+    display: none;
+    @include flex-direction(column);
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
   > li{
     flex: 1 0 0;
     position: relative;
     float: left;
+    @include breakpoint(max-width 600px){
+      width: 100%;
+    }
     > a{
       display: block;
       position: relative;
