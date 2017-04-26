@@ -25,14 +25,14 @@ $(document).ready(function () {
     /*close header mobile menu*/
 
     /*animate scroll menu*/
-    /*$(document).on('click', '.nav-top a', function (event) {/!*функция прокрутки на блок страницы при клике по элементам меню *!/
+    $(document).on('click', '.header__nav a', function (event) {/*функция прокрутки на блок страницы при клике по элементам меню */
         event.preventDefault();
         var href = $(this).attr('href');
         var target = $(href);
         var top = target.offset().top;
         $('html,body').animate({scrollTop: top}, 1000);
         return false;
-    });*/
+    });
     /*close animate scroll menu*/
 
     /*block animation*/
