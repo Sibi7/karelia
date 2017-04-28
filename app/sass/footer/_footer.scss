@@ -12,6 +12,9 @@
     margin-top: 27px;
     margin-bottom: 23px;
     font-family: $Boomboom;
+    @include breakpoint(max-width 770px){
+      margin-left: calc(50% - (192px/2));
+    }
     @include breakpoint(max-width 600px) {
       margin-left: calc(50% - (192px / 2));
       margin-top: 10px;
@@ -54,12 +57,29 @@
     position: relative;
     float: left;
     width: calc(100% - 192px);
+    @include breakpoint(max-width 770px){
+      width: 100%;
+    }
+    @include breakpoint(max-width 600px){
+      width: 100%;
+    }
   }
   &__contacts{
     display: block;
     position: relative;
     float: left;
     width: 50%;
+    margin-top: 30px;
+    @include breakpoint(max-width 770px){
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    @include breakpoint(max-width 600px){
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
     > p{
       display: block;
       position: relative;
@@ -70,6 +90,20 @@
       font-size: 15px;
       font-weight: 700;
       line-height: 28px;
+      @include breakpoint(max-width 1200px){
+        margin-left: 20px;
+      }
+      @include breakpoint(max-width 770px){
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+      }
+      @include breakpoint(max-width 600px){
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+      }
     }
     > a{
       display: block;
@@ -80,6 +114,18 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 28px;
+      @include breakpoint(max-width 1200px){
+        width: calc(100% - 97px);
+      }
+      @include breakpoint(max-width 770px){
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+      }
+      @include breakpoint(max-width 600px){
+        width: 100%;
+        text-align: center;
+      }
     }
   }
   &__contacts:nth-of-type(2){

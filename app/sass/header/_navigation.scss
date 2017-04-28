@@ -3,6 +3,9 @@
   position: relative;
   float: right;
   width: 740px;
+  @include breakpoint(max-width 770px){
+    width: calc(100% - 192px);
+  }
   @include breakpoint(max-width 600px){
     width: 100%;
   }
@@ -64,6 +67,9 @@
       text-transform: uppercase;
       padding: 17px 0;
       @include box-sizing(border-box);
+      @include breakpoint(max-width 770px){
+        font-size: 12px;
+      }
       &:after{
         display: block;
         position: absolute;
